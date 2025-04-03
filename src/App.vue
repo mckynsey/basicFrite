@@ -1,28 +1,19 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Accueil</router-link>
-      <router-link to="/subscription">Abonnement</router-link>
-      <router-link to="/contact">Contact</router-link>
-    </nav>
+  <div class="global">
+    <Header />
     <router-view />
   </div>
 </template>
 
-<script>
-export default {
-  name: "App",
-};
+<script setup>
+import Header from "./components/Header.vue";
 </script>
 
 <style>
-nav {
-  background-color: #ccc;
-  padding: 10px;
-}
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: black;
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
