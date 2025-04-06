@@ -15,7 +15,7 @@
     <div class="coach">
       <div class="coach1 bouille">
         <div class="part1">
-          <img
+          <img class="img"
             src="../assets/female_coach_logo.png.jpg"
             alt="Coach 1"
             width="175"
@@ -88,6 +88,7 @@
   margin-top: 25%;
   font-size: 1em;
   margin: 80px;
+  margin-bottom: 10px;
   width: 900px;
   color: #000000;
   background-color: #ffd621;
@@ -135,5 +136,8 @@ p {
 .part2 {
   width: 50%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
 </style>
