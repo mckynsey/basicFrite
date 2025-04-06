@@ -16,4 +16,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-image: url("../src/assets/Image_fondfond.svg");
+  background-repeat: no-repeat ;
+  background-size: cover;
+  background-position: center 200px;}
 </style>

@@ -1,8 +1,14 @@
 <template>
-  <div class="home">
+<!-- Ici, j'ai découpé mon code en plusieurs div afin de pouvoir les manipuler plus simplement. 
+ Pour ce faire, j'ai d'abord placé ma phrase d'accroche dans une div pour lui donner le style que je veux.
+  J'ai fait de même pour le texte d'accroche. Ensuite, j'ai englobé les coachs dans une classe pour les diviser en sous-divs de 2 cartes,
+   qui représentent chacune 2 div : une contenant une colonne avec l'image et les compétences (skills), et l'autre avec le titre et la présentation. -->
+<div class="home">
     <div class="phrase">
       <div class="phrase1">
-        <h1>La patate ca se cultive avec <span class="gras">CROSS'FRITE</span> </h1>
+        <h1>
+          La patate ca se cultive avec <span class="gras">CROSS'FRITE</span>
+        </h1>
       </div>
     </div>
     <div class="pres">
@@ -15,14 +21,15 @@
     <div class="coach">
       <div class="coach1 bouille">
         <div class="part1">
-          <img class="img"
-            src="../assets/female_coach_logo.png.jpg"
+          <img
+            class="img"
+            src="../assets/women logo.png"
             alt="Coach 1"
             width="175"
             height="175"
           />
 
-          <div class="skill">
+          <div class="skill1">
             <ul>
               <li>Formation scientifique</li>
               <li>Programme sur mesure</li>
@@ -31,9 +38,9 @@
           </div>
         </div>
         <div class="part2">
-          <div class="presentation">
-            <h2>Emilie</h2>
-            <h3>la specialiste du fitness</h3>
+          <h2>Emilie</h2>
+          <h3>la specialiste du fitness</h3>
+          <div class="presentation1">
             <p>
               Émilie est une coach professionnelle qui utilise une approche
               scientifique pour vous aider à atteindre vos objectifs de fitness.
@@ -45,13 +52,8 @@
       </div>
       <div class="coach2 bouille">
         <div class="part1">
-          <img
-            src="../assets/male_coach_logo.png.jpg"
-            alt="Coach 2"
-            width="175"
-            height="175"
-          />
-          <div class="skill">
+          <img src="../assets/men.png" alt="Coach 2" width="175" height="175" />
+          <div class="skill2">
             <ul>
               <li>Motivation</li>
               <li>Conaissance appronfondie</li>
@@ -62,7 +64,7 @@
         <div class="part2">
           <h2>ALEX</h2>
           <h3>le motivant</h3>
-          <div class="presentation">
+          <div class="presentation2">
             <p>
               Alex est un coach passionné qui sait comment vous motiver à
               atteindre vos objectifs. Il vous aidera à concevoir un programme
@@ -78,7 +80,7 @@
 
 <script setup></script>
 <style scoped>
-.phrase{
+.phrase {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,6 +140,51 @@ p {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
+}
+.coach1 {
+  background-color: #e5bff2;
+  position: relative;
+}
+.coach2 {
+  background-color: #9a93e6;
+  position: relative;
+}
+.presentation1 {
+  background-color: #f7d4d4;
+}
+.presentation2 {
+  background-color: #6d7cef;
+}
+.skill1,
+.skill2 {
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2), 0 -10px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.skill1 {
+  background-color: #f0f0f0;
+}
+
+.skill2 {
+  background-color: #e0e0e0;
+}
+.coach1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 168px;
+  height: 175px;
+  border-radius: 50%;
+}
+.coach2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 168px;
+  height: 175px;
+  border-radius: 50%;
 }
 </style>
